@@ -1,0 +1,54 @@
+@font-face {
+	font-family: logoFont;
+	src: url('/src/app/assets/font/logo-font.ttf');
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: menuFont;
+	src: url('/src/app/assets/font/menu-font.ttf');
+}
+
+header {
+	.logo {
+		text-decoration: none;
+
+		h2 {
+			font-family: logoFont;
+			color: #abd9ff;
+			font-size: 8vw;
+			text-align: center !important;
+			margin-top: 0;
+		}
+	}
+
+	.navbar {
+		border-radius: 0;
+		background: rgba(0, 0, 0, 0.5);
+		border: none;
+
+		.navbar-collapse {
+			border: none;
+		}
+		
+		.navbar-nav {
+			li {
+				a {
+					font-size: 20px;
+					font-family: menuFont;
+					color: #abd9ff;
+					padding: 15px;
+					text-shadow: none;
+					text-transform: uppercase;
+					&:hover {
+						color: #757575;
+					}
+				}
+			}
+		}
+
+		.navbar-right {
+			margin: 35px 0;
+		}
+	}
+}
